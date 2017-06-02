@@ -253,16 +253,45 @@ canvas {
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		position: relative;
+		p {
+			margin: 0;
+		}
+		.desc {
+			color: @color-white;
+		}
+		.highlighted {
+			background-color: @color-blue;
+			display: inline-block;
+			padding: 3px 20px;
+			font-family: @font-bold;
+			font-style: normal;
+			padding-left: 55px;
+			margin-left: -52px;
+			text-transform: uppercase;
+		}
+		em {
+			font-size: 60px;
+			line-height: normal;
+		}
 		.arrow-down {
 			width: 13px;
 			height: 40px;
 			display: inline-block;
-			background: transparent url(../imgs/arrow-down.png) no-repeat 0 0;
+			background: transparent url(../imgs/arrow-down.png) no-repeat center;
 			position: absolute;
 			bottom: 30px;
 			left: 50%;
 			margin-left: -7px;
 			z-index: 4;
+		}
+		.bar-wrapper {
+			img {
+				position: absolute;
+				right: 30px;
+				top: 0;
+				height: 100%;
+				width: 100%;
+			}
 		}
 	}
 	#section-one {
@@ -316,16 +345,16 @@ canvas {
 			position: absolute;
 			right: 0;
 			top: 0;
-			width: 510px;
+			width: 29%;
 			height: 100%;
-			background: transparent url(../imgs/blue-overlay.png) no-repeat 90% 0;
-			background-size: auto 100%;
+			// background: transparent url(../imgs/blue-overlay.png) no-repeat 90% 0;
+			// background-size: auto 100%;
 			.inner {
 				color: @color-white;
 				position: absolute;
-				bottom: 140px;
-				width: 282px;
-				left: 102px;
+				bottom: 12%;
+				width: 53%;
+				left: 12%;
 				line-height: normal;
 			}
 		}
@@ -333,41 +362,42 @@ canvas {
 			position: absolute;
 			left: 52px;
 			top: 180px;
-			.desc {
-				color: @color-white;
-			}
-			.highlighted {
-				background-color: @color-blue;
-				display: inline-block;
-				padding: 3px 20px;
-				font-family: @font-bold;
-				font-style: normal;
-				padding-left: 55px;
-				margin-left: -52px;
-			}
-			em {
-				font-size: 48px;
-				line-height: normal;
-			}
 		}
 	}
 	#section-three {
 		background-image: url(../imgs/bulb.jpg);
+		.bar-wrapper {
+			img {
+				width: 62%;
+			}
+		}
 		.left {
 			position: absolute;
 			left: 0;
 			top: 0;
-			width: 510px;
+			width: 46%;
 			height: 100%;
-			background: transparent url(../imgs/blue-overlay.png) no-repeat 90% 0;
-			background-size: auto 100%;
+			// background: transparent url(../imgs/blue-overlay.png) no-repeat 90% 0;
+			// background-size: auto 100%;
 			.inner {
 				color: @color-white;
 				position: absolute;
-				bottom: 190px;
-				width: 282px;
-				left: 95px;
+				bottom: 17%;
+				width: 34%;
+				left: 45%;
 				line-height: normal;
+			}
+		}
+		.right {
+			text-align: right;
+			padding-right: 100px;
+			position: absolute;
+			right: 0;
+			bottom: 6%;
+			.highlighted {
+				margin-right: -99px;
+				padding-right: 94px;
+				margin-top: 8px;
 			}
 		}
 	}
@@ -376,32 +406,45 @@ canvas {
 		.center {
 			position: absolute;
 			left: 50%;
-			margin-left: -255px;
+			margin-left: -14%;
 			top: 0;
-			width: 510px;
+			width: 28%;
 			height: 100%;
-			background: transparent url(../imgs/blue-overlay.png) no-repeat 90% 0;
-			background-size: auto 100%;
+			// background: transparent url(../imgs/blue-overlay.png) no-repeat 90% 0;
+			// background-size: auto 100%;
 			.inner {
 				color: @color-white;
 				position: absolute;
-				bottom: 180px;
-				width: 282px;
-				left: 108px;
+				bottom: 28%;
+				width: 55%;
+				left: 14%;
 				line-height: normal;
+			}
+		}
+		.left {
+			position: absolute;
+			left: 0;
+			bottom: 33%;
+			.desc {
+				padding-left: 100px;
+			}
+			.highlighted {
+				margin-left: -102px;
+				padding-left: 106px;
 			}
 		}
 	}
 }
 #section-five {
+	background: transparent url(../imgs/bg-home-logos.jpg) repeat 0 0;
 	#home-logos {
 		.item {
-			height: 200px;
+			height: 167px;
 			background-color: @color-black;
 			margin: 30px 0;
 		}
 		.item-2 {
-			height: 430px;
+			height: 363px;
 		}
 	}
 }
