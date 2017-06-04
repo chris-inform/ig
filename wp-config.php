@@ -24,10 +24,10 @@ define('DB_NAME', 'informgroup');
 
 /** MySQL database username */
 
-define('DB_USER', 'chris');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'chris1234');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

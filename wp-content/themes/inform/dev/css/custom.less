@@ -1,6 +1,7 @@
 @import url('normalize.css');
 @import url('bootstrap/bootstrap');
 @import url('jquery.fullpage.css');
+@import url('font-awesome.css');
 
 @font-face {
   font-family: 'PublicaSans-Light';
@@ -185,8 +186,8 @@ body {
     right: 45px;    
     display: inline-block;
     background: transparent url(../imgs/close-btn.png) no-repeat center;
-    width: 44px;
-    height: 29px;
+    width: 41px;
+    height: 25px;
     text-indent: 1000px;
     overflow: hidden;
   }
@@ -438,6 +439,9 @@ canvas {
 #section-five {
 	background: transparent url(../imgs/bg-home-logos.jpg) repeat 0 0;
 	#home-logos {
+		overflow: hidden;
+		padding-top: 30px;
+		padding-bottom: 30px;
 		.item {
 			height: 167px;
 			background-color: @color-black;
@@ -447,6 +451,330 @@ canvas {
 			height: 363px;
 		}
 	}
+}
+#section-six {	
+	position: relative;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	.carousel-description {
+		text-align: center;
+		margin-top: 40px;
+		.message span {
+			background-color: @color-bluelighter;
+			color: @color-white;
+			font-size: 24px;
+			line-height: 110%;
+			font-family: @font-bold;
+			display: inline;
+		}
+		.cname {
+			margin-top: 10px;
+			font-style: italic;
+			text-transform: uppercase;
+			color: @color-black;
+		}
+	}
+	.rope {
+		position: absolute;
+		top: 100px;
+		left: 0;
+		width: 100%;
+		height: 50px;
+		background: transparent url(../imgs/rope.jpg) repeat-x 0 0;
+	}
+	.thumbnail {
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: top center;
+		border: none;
+		padding: 116px 0 0;
+		&.thumb-1 {
+			background-image: url(../imgs/frame-1.png);
+			width: 172px;
+			height: 256px;
+		}
+		&.thumb-2 {
+			background-image: url(../imgs/frame-2.png);
+			width: 158px;	
+			height: 253px;
+		}
+		&.thumb-3 {
+			background-image: url(../imgs/frame-3.png);
+			width: 162px;	
+			height: 254px;
+		}
+		&.thumb-4 {
+			background-image: url(../imgs/frame-4.png);
+			width: 163px;	
+			height: 251px;
+		}
+		&.thumb-5 {
+			background-image: url(../imgs/frame-5.png);
+			width: 155px;	
+			height: 254px;
+		}
+	}
+	.carousel {
+	  position: relative;
+	  top: 18px;
+	}
+
+	.carousel-inner {
+	  position: relative;
+	  overflow: hidden;
+	  width: 100%;
+
+	  > .item {
+	    display: inline-block;
+	    position: relative;
+	    float: left;
+	    margin: 0 15px;
+	    /*.transition(.6s ease-in-out left);*/
+			
+	    br,.colored {
+	    	display: none;
+	    }
+
+	    &.active {
+	    	.black {
+	    		display: none;
+	    	}
+	    	.colored {
+	    		display: block;
+	    	}
+	    }
+
+	    .carousel-caption {
+	    	display: none;
+	    }
+
+	    > img,
+	    > a > img {
+	      &:extend(.img-responsive);
+	      line-height: 1;
+	    }
+
+	    // WebKit CSS3 transforms for supported devices
+	    @media all and (transform-3d), (-webkit-transform-3d) {
+	      .transition-transform(none);
+	      /*.backface-visibility(~'hidden');*/
+	      .perspective(none);
+
+	      &.next,
+	      &.active.right {
+	        /*.translate3d(100%, 0, 0);*/
+	        transform: none;
+	        /*left: 0;*/
+	        left: auto;
+	      }
+	      &.prev,
+	      &.active.left {
+	        /*.translate3d(-100%, 0, 0);*/
+	        transform: none;
+	        /*left: 0;*/
+	        left: auto;
+	      }
+	      &.next.left,
+	      &.prev.right,
+	      &.active {
+	        /*.translate3d(0, 0, 0);*/
+	        transform: none;
+	        /*left: 0;*/
+	        left: auto;
+	      }
+	    }
+	  }
+
+	  > .active,
+	  > .next,
+	  > .prev {
+	    display: inline-block;
+	  }
+
+	  > .active {
+	    /*left: 0;*/
+	    left: auto;
+	  }
+
+	  > .next,
+	  > .prev {
+	    position: relative;
+	    top: auto;
+	    /*width: 100%;*/
+	    width: auto;
+	  }
+
+	  > .next {
+	    /*left: 100%;*/
+	    left: auto;
+	  }
+	  > .prev {
+	    /*left: -100%;*/
+	    left: auto;
+	  }
+	  > .next.left,
+	  > .prev.right {
+	    left: 0;
+	  }
+
+	  > .active.left {
+	    /*left: -100%;*/
+	    left: auto;
+	  }
+	  > .active.right {
+	    /*left: 100%;*/
+	    left: auto;
+	  }
+
+	}
+}
+
+#section-seven {
+	position: relative;
+	.address-overlay {
+		background: transparent url(../imgs/blue-overlay.png) no-repeat 0 0;
+		background-size: auto 100%;
+		position: absolute;
+		right: 8%;
+		bottom: 0;
+		height: 100%;
+		width: 29%;
+		.address-inner {
+			color: @color-white;
+			position: absolute;
+			left: 25%;
+			font-size: 30px;
+			width: 57%;
+			top: 36%;
+		}
+	}
+}
+#section-eight {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	position: relative;
+	.blue-bar {
+		background: transparent url(../imgs/blue-overlay.png) no-repeat 0 0;
+		background-size: auto 100%;
+		position: absolute;
+		top: 0;
+		left: 23%;
+		width: 22%;
+		height: 100%;
+		.inner {
+			color: @color-white;
+			font-size: 52px;
+			position: absolute;
+			right: 18%;
+			top: 7%;
+			line-height: normal;
+			text-align: right;
+			strong {
+				font-weight: normal;
+				font-family: @font-bold;
+			}
+		}
+	}
+	.bg-contact {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 57%;
+		height: 100%;
+		background: @color-white url(../imgs/bg-contact.jpg) no-repeat bottom center;
+		background-size: cover;
+		z-index: -1;
+	}
+	.form-control {
+		background-color: #e8e8e8;
+		color: @color-black;
+		font-style: italic;
+		border: none;
+		border-radius: 0;
+		font-size: 16px;
+		box-shadow: none;
+	}
+	.btn {
+		color: @color-blue;
+		font-style: italic;
+		font-size: 20px;
+		border-radius: 0;
+		border: 3px solid @color-blue;
+		background-color: transparent;
+		box-shadow: none;
+		padding-top: 6px;
+		padding-bottom: 6px;
+	}
+}
+#section-nine {
+	background-color: @color-bluelighter;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			display: inline-block;
+			margin-right: 15px;
+			margin-left: 15px;
+		}
+		a {
+			color: @color-white;
+			text-transform: uppercase;
+			font-size: 20px;
+			display: inline-block;
+			padding: 20px;
+		}
+	}
+}
+.site-footer {
+	background-color: @color-blue;
+	color: @color-white;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	.logo-footer {
+		background: @color-blue url(../imgs/footer-logo.jpg) no-repeat 0 0;
+		display: inline-block;
+		width: 161px;
+		height: 35px;
+		margin-right: 12px;
+		position: relative;
+		top: 2px;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline-block;
+			margin: 0 12px;
+		}
+		a {
+			display: inline-block;
+			color: @color-white;
+		}
+	}
+	.left {
+		text-align: right;
+		p {
+			margin: 0;
+			display: inline-block;
+		}
+	}
+	.right {
+		span {
+			float: left;
+			margin-right: 24px;
+		}
+		.inner {
+			padding-left: 75px;
+			padding-top: 15px;
+		}
+	}
+}
+
+.col-half-offset{
+  margin-left:4.166666667%
 }
 
 

@@ -47,9 +47,19 @@ $(document).ready(function() {
   
 	fullscreen();
 
-	$('#testiCarousel').carousel({
-	    interval: 10000
-	})
+	$(function() {
+		$('#testiCarousel').carousel({
+			interval: 5000
+		});
+		var caption = $('div.item:nth-child(1) .carousel-caption');
+		$('.carousel-description').html(caption.html());
+		caption.css('display','none');
+		$("#testiCarousel").on('slide.bs.carousel', function(evt) {
+		   var caption = $('div.item:nth-child(' + ($(evt.relatedTarget).index()+1) + ') .carousel-caption');
+		   $('.carousel-description').html(caption.html());
+		   caption.css('display','none');
+		});
+	});
 
 
 
