@@ -44,8 +44,9 @@ $(document).ready(function() {
 
 	});
 
-  
 	fullscreen();
+	AOS.init();
+
 
 	$(function() {
 		$('#testiCarousel').carousel({
@@ -85,9 +86,9 @@ $(window).resize(function() {
 // Defining a function to set size for #hero 
 function fullscreen(){
 	$('.section').css({
-          width: jQuery(window).width(),
-          height: jQuery(window).height()
-      });
+    width: jQuery(window).width(),
+    height: jQuery(window).height()
+  });
 }
 
 /* Open */

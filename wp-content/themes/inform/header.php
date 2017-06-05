@@ -24,7 +24,7 @@
 	<!-- <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'inform' ); ?></a> -->
 
 	<header id="masthead" class="site-header row" role="banner">
-		<div class="site-branding col-md-4 vcenter first">
+		<div class="site-branding col-md-3 vcenter first">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -39,10 +39,10 @@
 			<?php
 			endif; ?>
 		</div><!--
-		--><nav id="site-navigation" class="main-navigation col-md-4 vcenter second" role="navigation">
+		--><nav id="site-navigation" class="main-navigation col-md-6 vcenter second" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!--
-		--><div class="menu-toggle col-md-4 vcenter third">
+		--><div class="menu-toggle col-md-3 vcenter third">
 			<a href="#" onClick="openNav()" title="Menu">Menu</a>
 		</div>
 

@@ -34,8 +34,8 @@ gulp.task('scripts', function () {
     gulp.src([
             'js/jquery.min.js',
             'js/bootstrap.min.js',
-            'js/scrolloverflow.min.js',
-            'js/jquery.fullpage.min.js',
+            'js/parallax.js',
+            'js/aos.js',
             'js/custom.js'
             ])
 	.pipe(concat('app.js'))

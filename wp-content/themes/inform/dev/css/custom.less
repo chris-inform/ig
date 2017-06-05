@@ -1,7 +1,7 @@
 @import url('normalize.css');
 @import url('bootstrap/bootstrap');
-@import url('jquery.fullpage.css');
 @import url('font-awesome.css');
+@import url('aos.css');
 
 @font-face {
   font-family: 'PublicaSans-Light';
@@ -297,7 +297,7 @@ canvas {
 	}
 	#section-one {
 		// background-image: url(../imgs/smoke.jpg);
-		background-color: #8C8DC6;
+		// background-color: #8C8DC6;
 		.smoke1 {
 			background-size: cover;
 			position: absolute;
@@ -313,7 +313,7 @@ canvas {
 			}
 		}
 		.smoke1 {
-			background-image: url(../imgs/smoke.jpg);
+			// background-image: url(../imgs/smoke.jpg);
 		}
 		h1 {
 			margin: 0;
@@ -341,7 +341,7 @@ canvas {
 		}
 	}
 	#section-two {
-		background-image: url(../imgs/stairs.jpg);
+		// background-image: url(../imgs/stairs.jpg);
 		.right {
 			position: absolute;
 			right: 0;
@@ -366,7 +366,7 @@ canvas {
 		}
 	}
 	#section-three {
-		background-image: url(../imgs/bulb.jpg);
+		// background-image: url(../imgs/bulb.jpg);
 		.bar-wrapper {
 			img {
 				width: 62%;
@@ -403,7 +403,7 @@ canvas {
 		}
 	}
 	#section-four {
-		background-image: url(../imgs/telescope.jpg);
+		// background-image: url(../imgs/telescope.jpg);
 		.center {
 			position: absolute;
 			left: 50%;
@@ -488,6 +488,14 @@ canvas {
 		background-position: top center;
 		border: none;
 		padding: 116px 0 0;
+		&:hover,&:focus {
+			.colored {
+				display: block !important;
+			}
+			.black {
+				display: none !important;
+			}
+		}
 		&.thumb-1 {
 			background-image: url(../imgs/frame-1.png);
 			width: 172px;
@@ -632,19 +640,19 @@ canvas {
 #section-seven {
 	position: relative;
 	.address-overlay {
-		background: transparent url(../imgs/blue-overlay.png) no-repeat 0 0;
+		background: transparent url(../imgs/blue-overlay.png) no-repeat center;
 		background-size: auto 100%;
 		position: absolute;
 		right: 8%;
 		bottom: 0;
 		height: 100%;
-		width: 29%;
+		width: 35%;
 		.address-inner {
 			color: @color-white;
-			position: absolute;
-			left: 25%;
+			position: relative;
+			left: 23%;
 			font-size: 30px;
-			width: 57%;
+			width: 50%;
 			top: 36%;
 		}
 	}
@@ -654,18 +662,18 @@ canvas {
 	padding-bottom: 50px;
 	position: relative;
 	.blue-bar {
-		background: transparent url(../imgs/blue-overlay.png) no-repeat 0 0;
+		background: transparent url(../imgs/blue-overlay.png) no-repeat center;
 		background-size: auto 100%;
 		position: absolute;
 		top: 0;
-		left: 23%;
-		width: 22%;
+		left: 17%;
+		width: 30%;
 		height: 100%;
 		.inner {
 			color: @color-white;
 			font-size: 52px;
-			position: absolute;
-			right: 18%;
+			position: relative;
+			right: 12%;
 			top: 7%;
 			line-height: normal;
 			text-align: right;
