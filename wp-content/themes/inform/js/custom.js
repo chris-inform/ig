@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	fullscreen();
+
 	$("#back_to_top").on('click',function(e) {
 	    e.preventDefault();
 	    $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -44,7 +46,6 @@ $(document).ready(function() {
 
 	});
 
-	fullscreen();
 	AOS.init();
 
 
@@ -85,7 +86,7 @@ $(window).resize(function() {
 
 // Defining a function to set size for #hero 
 function fullscreen(){
-	$('.section').css({
+	$('#fullpage .section').css({
     width: jQuery(window).width(),
     height: jQuery(window).height()
   });

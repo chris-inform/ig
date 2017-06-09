@@ -45,7 +45,7 @@ body {
 }
 
 #masthead {
-	background-color: @color-gray;
+	background-color: fade(@color-gray, 88%);
 	margin: 0;
 	padding: 12px 10px;
 	position: fixed;
@@ -69,7 +69,7 @@ body {
 	margin: 0;
 	height: 31px;
 	a {
-		background: transparent url(../imgs/logo.jpg) no-repeat center;
+		background: transparent url(../imgs/logo.png) no-repeat center;
 		display: inline-block;
 		margin: 0;
 		width: 161px;
@@ -233,7 +233,8 @@ body {
 	}
 }
 
-#post-28 {
+#post-28,
+#post-5890 {
 	h1.entry-title {
 		display: none;
 	}
@@ -254,6 +255,7 @@ canvas {
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		position: relative;
+		overflow: hidden;
 		p {
 			margin: 0;
 		}
@@ -296,8 +298,8 @@ canvas {
 		}
 	}
 	#section-one {
-		// background-image: url(../imgs/smoke.jpg);
-		// background-color: #8C8DC6;
+		background-image: url(../imgs/smoke.jpg);
+		background-color: #8C8DC6;
 		.smoke1 {
 			background-size: cover;
 			position: absolute;
@@ -341,7 +343,7 @@ canvas {
 		}
 	}
 	#section-two {
-		// background-image: url(../imgs/stairs.jpg);
+		background-image: url(../imgs/stairs.jpg);
 		.right {
 			position: absolute;
 			right: 0;
@@ -366,7 +368,7 @@ canvas {
 		}
 	}
 	#section-three {
-		// background-image: url(../imgs/bulb.jpg);
+		background-image: url(../imgs/bulb.jpg);
 		.bar-wrapper {
 			img {
 				width: 62%;
@@ -403,7 +405,7 @@ canvas {
 		}
 	}
 	#section-four {
-		// background-image: url(../imgs/telescope.jpg);
+		background-image: url(../imgs/telescope.jpg);
 		.center {
 			position: absolute;
 			left: 50%;
@@ -438,6 +440,7 @@ canvas {
 }
 #section-five {
 	background: transparent url(../imgs/bg-home-logos.jpg) repeat 0 0;
+	overflow: hidden;
 	#home-logos {
 		overflow: hidden;
 		padding-top: 30px;
@@ -453,9 +456,27 @@ canvas {
 	}
 }
 #section-six {	
+	overflow: hidden;
 	position: relative;
 	padding-top: 40px;
 	padding-bottom: 40px;
+	.sec-title {
+		text-align: center;
+		.inner {
+			margin: 0 auto;
+			background-color: @color-blue;
+			color: @color-white;
+			font-size: 22px;
+			display: inline-block;
+			line-height: normal;
+			text-align: center;
+			padding: 10px 15px;
+			strong {
+				font-family: @font-bold;
+				font-weight: normal;
+			}
+		}
+	}
 	.carousel-description {
 		text-align: center;
 		margin-top: 40px;
@@ -476,7 +497,7 @@ canvas {
 	}
 	.rope {
 		position: absolute;
-		top: 100px;
+		top: 193px;
 		left: 0;
 		width: 100%;
 		height: 50px;
@@ -639,42 +660,51 @@ canvas {
 
 #section-seven {
 	position: relative;
+	overflow: hidden;
+	p {
+		margin: 0;
+	}
+	.bar-wrapper {
+		img {
+			position: absolute;
+			right: 6%;
+			top: 0;
+			height: 100%;
+			width: 29%;
+		}
+	}
 	.address-overlay {
-		background: transparent url(../imgs/blue-overlay.png) no-repeat center;
-		background-size: auto 100%;
-		position: absolute;
-		right: 8%;
-		bottom: 0;
-		height: 100%;
-		width: 35%;
 		.address-inner {
-			color: @color-white;
-			position: relative;
-			left: 23%;
+			position: absolute;
 			font-size: 30px;
-			width: 50%;
-			top: 36%;
+			right: 12%;
+			width: 16%;
+			top: 35%;
+			color: @color-white;
 		}
 	}
 }
 #section-eight {
+	overflow: hidden;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	position: relative;
+	.bar-wrapper {
+		img {
+			position: absolute;
+			left: 18%;
+			top: 0;
+			height: 100%;
+			width: 29%;
+		}
+	}
 	.blue-bar {
-		background: transparent url(../imgs/blue-overlay.png) no-repeat center;
-		background-size: auto 100%;
-		position: absolute;
-		top: 0;
-		left: 17%;
-		width: 30%;
-		height: 100%;
 		.inner {
 			color: @color-white;
 			font-size: 52px;
-			position: relative;
-			right: 12%;
-			top: 7%;
+			position: absolute;
+			left: 33%;
+			top: 10%;
 			line-height: normal;
 			text-align: right;
 			strong {
@@ -687,7 +717,7 @@ canvas {
 		position: absolute;
 		left: 0;
 		top: 0;
-		width: 57%;
+		width: 80%;
 		height: 100%;
 		background: @color-white url(../imgs/bg-contact.jpg) no-repeat bottom center;
 		background-size: cover;
@@ -785,6 +815,216 @@ canvas {
   margin-left:4.166666667%
 }
 
+#content {
+	.section {
+		clear: both;
+		display: block;
+	}
+	.banner {
+		height: 650px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+.banner.b2b {
+	background-image: url(../imgs/banner-b2b.jpg);
+	position: relative;
+	.blue-bar {
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+	}
+	.title-wrapper {
+		position: absolute;
+		top: 0;
+		left: 15%;
+		width: 570px;
+		height: 100%;
+		.title {
+			color: @color-white;
+			font-size: 94px;
+			position: absolute;
+			bottom: 4%;
+			right: 20%;
+			span {
+				font-family: @font-bold;
+				color: @color-bluelighter;
+				font-size: 100px;
+				position: relative;
+				top: 4px;
+				left: -12px;
+			}
+		}
+	}
+}
+.boxed-text {
+	font-family: @font-bold;
+	text-transform: uppercase;
+	padding: 0 8px;
+	background-color: @color-blue;
+	font-size: 50px;
+	display: inline-block;
+	line-height: normal;
+	color: @color-white;
+}
+.b2b-intro {
+	background: @color-white url(../imgs/b2b-intro-bg.jpg) repeat 0 0;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	.left {
+		text-align: right;
+		.inner {
+			padding: 20px;
+		}
+		h1 {
+			font-style: italic;
+			font-size: 56px;
+		}
+	}
+	.right {
+		.inner {
+			padding: 140px 20px 20px;
+		}
+	}
+}
+.how-we-do {
+	background-color: #404041;
+	overflow: hidden;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	.item {
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+		p {
+			margin: 0;
+		}
+	}
+	.left {
+		.inner {
+			position: relative;
+			.item {
+				padding: 60px 50px 20px;
+				position: relative;
+				p {
+					margin: 0;
+				}
+				.text-content {
+					line-height: normal;
+					position: relative;
+					z-index: 2;
+				}
+			}
+		}
+	}
+	.center {
+		.inner {
+			.item1 {
+				// background: transparent url(../imgs/hwd-center-1.jpg) no-repeat top center;
+				position: relative;
+				width: 368px;
+				margin: 0 auto 50px;
+				// padding: 48px 40px 20px;
+			}
+			.item2 {
+				background: transparent url(../imgs/hwd-center-2.jpg) no-repeat top center;
+				text-align: center;
+				text-transform: uppercase;
+				height: 80px;
+				padding-top: 16px;
+				margin-bottom: 60px;
+				h1 {
+					margin: 0;
+					font-size: 38px;
+				}
+			}
+			.item3 {
+				background: transparent url(../imgs/hwd-center-3.jpg) no-repeat top center;
+				width: 427px;
+				margin: 0 auto;
+				height: 198px;
+				padding: 50px 70px;
+			}
+		}
+	}
+	.right {
+		.inner {
+			.item1 {
+				background: transparent url(../imgs/hwd-right-1.jpg) no-repeat top center;
+				width: 379px;
+				height: 208px;
+				padding: 70px 60px 60px;
+				margin-bottom: 50px;
+			}
+			.item2 {
+				background: transparent url(../imgs/hwd-right-2.jpg) no-repeat top center;
+				width: 414px;
+				height: 191px;
+				padding: 70px 64px 64px;
+			}
+		}
+	}
+}
+.case-studies {
+	overflow: hidden;
+	background-color: @color-bluelighter;
+	.left {
+		background: @color-white url(../imgs/bg-case-studies-boxes.jpg) no-repeat 0 0;
+		background-size: cover;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		br {
+			display: none;
+		}
+		.item {
+			margin-bottom: 30px;
+			br {
+				display: none;
+			}
+		}
+	}
+	.right {
+		background-color: @color-bluelighter;
+		color: @color-white;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.study {
+		padding-left: 30px;
+		padding-top: 100px;
+		h1 {
+			font-size: 70px;
+			font-style: italic;
+			strong {
+				font-style: normal;
+				font-family: @font-bold;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.content-area {
+	.page {
+		.entry-header {
+			display: none;
+		}
+	}
+}
+
+body.home {
+	#masthead {
+		background-color: @color-gray;
+	}
+}
 
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
@@ -793,6 +1033,22 @@ canvas {
     top: 15px;
     right: 35px;
   }
+}
+
+@media only screen and (max-width: 1366px) {
+	// @import url('breakpoints/1024');
+	.how-we-do {
+		.left {
+			.inner {
+				.item {
+					padding: 43px 33px 20px;
+					.text-content {
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 1024px) {
