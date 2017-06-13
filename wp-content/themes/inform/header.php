@@ -54,7 +54,7 @@
 		  <div class="menu-container" id="menu-container">
 		  	<div class="menu-logo-wrapper">
 		  		<div class="menu-logo">
-		  			INFORM.
+		  			<div class="inner">INFORM.</div>
 		  		</div>
 		  	</div><!--
 		  	--><div class="overlay-content first-menu single">
