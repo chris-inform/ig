@@ -58,9 +58,14 @@
 		  		</div>
 		  	</div><!--
 		  	--><div class="overlay-content first-menu single">
-		  		<?php wp_nav_menu( array( 'theme_location' => 'site-menu', 'menu_id' => 'site-menu' ) ); ?>
+		  		<div class="inner">
+		  			<?php wp_nav_menu( array( 'theme_location' => 'site-menu', 'menu_id' => 'site-menu' ) ); ?>
+		  		</div>
 		  	</div><!--
 		  	--><div class="overlay-content second-menu">
+		  		<div class="inner">
+		  			<div class="menu-site-menu-container"></div>
+		  		</div>
 		  	</div>
 		  </div>
 		</div>
