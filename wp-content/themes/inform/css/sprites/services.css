@@ -1,0 +1,78 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-icon-media-services-accountbased {
+  background-image: url(../imgs/services.png);
+  background-position: 0px 0px;
+  width: 30px;
+  height: 30px;
+}
+.icon-icon-media-services-adformat {
+  background-image: url(../imgs/services.png);
+  background-position: -30px 0px;
+  width: 30px;
+  height: 30px;
+}
+.icon-icon-media-services-contextual {
+  background-image: url(../imgs/services.png);
+  background-position: 0px -30px;
+  width: 30px;
+  height: 30px;
+}
+.icon-icon-media-services-emailmedia {
+  background-image: url(../imgs/services.png);
+  background-position: -30px -30px;
+  width: 30px;
+  height: 30px;
+}
+.icon-icon-media-services-nativecontent {
+  background-image: url(../imgs/services.png);
+  background-position: -60px 0px;
+  width: 30px;
+  height: 30px;
+}
+.icon-icon-media-services-objectives {
+  background-image: url(../imgs/services.png);
+  background-position: -60px -30px;
+  width: 30px;
+  height: 30px;
+}
+.icon-icon-media-services-programmatic {
+  background-image: url(../imgs/services.png);
+  background-position: 0px -60px;
+  width: 30px;
+  height: 30px;
+}
+.icon-icon-media-services-publisher {
+  background-image: url(../imgs/services.png);
+  background-position: -30px -60px;
+  width: 30px;
+  height: 30px;
+}
+.icon-icon-media-services-search {
+  background-image: url(../imgs/services.png);
+  background-position: -60px -60px;
+  width: 30px;
+  height: 30px;
+}
+.icon-icon-media-services-social {
+  background-image: url(../imgs/services.png);
+  background-position: -90px 0px;
+  width: 30px;
+  height: 30px;
+}

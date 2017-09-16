@@ -9,11 +9,11 @@
 
 gulp.task('sprites', function () {
     var spriteData =
-      gulp.src('dev/imgs/offices/*') // source path of the sprite images
+      gulp.src('dev/imgs/audiences/*') // source path of the sprite images
         .pipe(spritesmith({
-            imgName: 'offices.png',
-            cssName: 'offices.css',
-            imgPath: 'imgs/offices.png'
+            imgName: 'audiences.png',
+            cssName: 'audiences.css',
+            imgPath: '../imgs/audiences.png'
         }));
 
     spriteData.img.pipe(gulp.dest('./imgs')); // output path for the sprite
@@ -32,10 +32,9 @@ gulp.task('imagemin', function(cb) {
 gulp.task('scripts', function () {
 
     gulp.src([
-            'js/jquery.min.js',
             'js/scrolloverflow.js',
-            'js/bootstrap.min.js',
             'js/jquery.fullpage.js',
+            'js/bootstrap.min.js',
             'js/custom.js'
             ])
 	.pipe(concat('app.js'))

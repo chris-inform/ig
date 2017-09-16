@@ -15,6 +15,22 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<?php if ( get_field('banner_title') ) : ?>
+			<div class="banner <?php the_field('banner_classname') ?>" style="background-image: url(<?php the_field('banner_image'); ?>);">
+			  <div class="title-wrapper">
+			    <div class="text-wrap">
+			      <div class="title"><span>/</span><?php the_field('banner_title'); ?><span>/</span></div>
+			      <?php if ( get_field('banner_subtitle') ) : ?>
+			      	<div class="subtitle"><?php the_field('banner_subtitle'); ?></div>
+			      <?php endif; ?>
+			      <div class="desc">
+			        <?php the_field('banner_description'); ?>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		<?php endif; ?>
+
 		<?php
 			the_content();
 
