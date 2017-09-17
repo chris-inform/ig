@@ -2057,9 +2057,6 @@ canvas {
 	.right {
 		.inner {
 			padding: 20px 20px;
-			p {
-				font-size: 16px;
-			}
 		}
 	}
 	&.telemarketing-intro {
@@ -2096,10 +2093,10 @@ canvas {
 		}
 	}
 	&.b2c-intro {
-		padding-bottom: 80px;
-		.right {
+		.left,.right {
 			.inner {
-				padding-top: 45px;
+				padding-top: 20px;
+				padding-bottom: 20px;
 			}
 		}
 	}
@@ -2250,14 +2247,60 @@ canvas {
 	}
 }
 .colored-postit {
-	background: url(../imgs/bg-cardboard.jpg) repeat 0 0;
+	background: url(../imgs/nfp-brick.jpg) no-repeat 0 0;
+	background-size: cover;
 	text-align: center;
 	padding-top: 80px;
 	padding-bottom: 80px;
 	overflow: hidden;
 	.item {
-		vertical-align: top;
+		max-width: 250px;
+		height: 350px;
 		display: inline-block;
+		margin: 30px 15px;
+		text-align: left;
+		background-color: @color-white;
+		&.yellow {
+			border: 15px solid #F6C523;
+		}
+		&.green {
+			border: 15px solid #3FCD8D;
+		}
+		&.blue {
+			border: 15px solid #67C6FC;
+		}
+		&.orange {
+			border: 15px solid #FF970A;
+		}
+		&.purple {
+			border: 15px solid #C277DE;
+		}
+		.box {
+			padding: 20px;
+			display: table;
+			height: 100%;
+			box-shadow: 0px 0px 10px #666666 inset;
+			.inner {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			h4 {
+				text-transform: uppercase;
+				color: @color-bluedark;
+				font-style: italic;
+				margin: 0;
+				font-size: 20px;
+				span {
+					font-family: @font-bold;
+					font-style: normal;
+				}
+			}
+			p {
+				margin: 0;
+				line-height: 120%;
+				font-size: 16px;
+			}
+		}
 	}
 }
 .nfp-intro {
@@ -2747,9 +2790,6 @@ canvas {
 				font-style: normal;
 			}
 		}
-		p {
-			font-size: 16px;
-		}
 		a {
 			color: @color-gray;
 		}
@@ -2825,7 +2865,6 @@ canvas {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	p {
-		font-size: 14px;
 		line-height: normal;
 	}
 	.name {
@@ -2961,11 +3000,15 @@ canvas {
 		.skew(-12deg);
 		max-width: 1000px;
 		margin: 0 auto;
+		display: table;
+		height: 100%;
 	}
 	.inner {
 		.skew(12deg);
-		padding: 100px 120px;
+		padding: 62px 150px;
 		overflow: hidden;
+		display: table-cell;
+		vertical-align: middle;
 		.item-wrapper {
 			color: @color-white;
 			margin-bottom: 15px;
@@ -2988,9 +3031,14 @@ canvas {
 		&:extend(.digital-more .inner-wrapper);
 		background-color: fade(@color-bluedark, 85%);
 		max-width: 800px;
+		display: table;
+		height: 100%;
 	}
 	.inner {
 		&:extend(.digital-more .inner);
+		display: table-cell;
+		vertical-align: middle;
+		padding: 62px 120px 0;
 		.item-wrapper {
 			&:extend(.digital-more .inner .item-wrapper);
 			&.last {
@@ -3249,7 +3297,6 @@ canvas {
 .telemarketingpage-intro {
 	.left {
 		text-align: left;
-		padding-top: 20px;
 		ul {
 			list-style: none;
 			padding-left: 27px;
@@ -3329,12 +3376,6 @@ canvas {
 				}
 			}
 		}
-	}
-}
-.telemarketingpage-intro {
-	padding: 0;
-	.left {
-		padding-top: 50px;
 	}
 }
 .marketingpage-intro,
@@ -4323,7 +4364,7 @@ body.home {
 	}
 	.inner-wrapper {
 		&:extend(.media-services .inner-wrapper);
-		background-color: fade(@color-blue, 70%);
+		background-color: fade(@color-bluedark, 85%);
 		margin-right: 0;
 		float: left;
 		margin-left: 300px;
@@ -4331,7 +4372,7 @@ body.home {
 	}
 	.inner {
 		&:extend(.media-services .inner);
-		padding: 200px 100px;
+		padding: 62px 100px 0;
 		display: table-cell;
 		vertical-align: middle;
 		.item-wrapper {
